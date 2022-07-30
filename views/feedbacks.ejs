@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Contact-Info</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            /* height: 260px;
+            width: 260px; */
+            font-size: small;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <% feeddata1.forEach(function (feedObj){ %>
+         
+   <div>
+        <h2>ID-<%= feedObj.id %></h2><br>
+        <h2>NAME-<%= feedObj.name %></h2><br>
+        <h2>GMAIL-<%= feedObj.email %></h2><br>
+        <h2>FEEDBACK-<%= feedObj.message %></h2>
+    </div>
+            <% }); %>
+    </div>
+    <br><br>
+    <a href="/Contact">Contact-page</a>
+  </body>
+</html>

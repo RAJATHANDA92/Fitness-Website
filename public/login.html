@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Fitness Gym</title>
+</head>
+
+<body>
+    <div class="container">
+        <a class="logo"><span>BE</span>FIT</a>
+        <!-- <div class="login-section"> -->
+            <div id="forms" class="login-panel">
+                <!-- <div class="lheader">Login</div> -->
+
+             <form  action="/validate" method="post" class="lbody"> 
+                    <div class="input-text" data-label="Username">
+                        <input type="text" name="username" placeholder="Enter username" required >
+                    </div>
+                    <div class="input-text" data-label="Password">
+                        <input type="text" name="password" placeholder="Enter  password" required >
+                    </div>
+                    
+                    <input class="btn-login" type="submit" value="Login" />
+
+                    <p class="message">Not Registered? <a href="#">Register</a></p>
+                </form>
+           
+
+            
+                <form  action="/add" method="post" id="registretion-form" class="lbody2">
+                    <div class="input-text" data-label="Username">
+                        <input type="text" name="username" placeholder="Enter username" required>
+                    </div>
+                    <!-- <div class="input-text" data-label="Email">
+                        <input type="text" name="username" placeholder="Enter Email" required>
+                    </div> -->
+                    <div class="input-text" data-label="Password">
+                        <input type="text" name="password" placeholder="Enter  password" required>
+                    </div>
+                    
+                    <input class="btn-login" type="submit" value="Register" />
+
+                    <p class="message">Already Registered? <a href="#">Login</a></p>
+                </form>
+
+
+            </div>
+
+            
+        <!-- </div> -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+$('.message a').click(function() {
+    $('form').animate({height:"toggle"},"slow");
+});
+
+</script>
+
+</body>
+
+</html>

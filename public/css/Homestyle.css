@@ -1,0 +1,53 @@
+body {
+  background-image: url('../images/gym28.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h1 {
+  color: red;
+}
+p {
+  text-align: center;
+  color:rgb(83, 3, 3);
+  font-family: Courier;
+  font-size: 400%;
+  
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+ 
+
+.Header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background:black;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-top:0 9%;
+
+}
+
+.Header .logo {
+      font-weight: bolder;
+      font-size: 3rem;
+      color:white;
+}
+
+.Header .logo span {
+
+  color:red
+}
+
+.Header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: white;
+}

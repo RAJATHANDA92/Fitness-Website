@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0%; padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear ;
+}
+
+body
+{
+    background-color: whitesmoke;
+}
+
+.Header {
+  /* position: fixed; */
+  top: 0; left: 0; right: 0;
+  background:black;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding-top:0 9%;
+
+}
+
+.Header .logo {
+      font-weight: bolder;
+      font-size: 3rem;
+      color:white;
+}
+
+.Header .logo span {
+
+  color:red
+}
+
+.Header .navbar a {
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  font-size: 1.7rem;
+  color: white;
+}
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  .header
+  {
+    font-weight: bolder;
+    text-align: center;
+    margin-right: 25%;
+    margin-top: 4px;
+  }
+
+  .flex-container
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60vh;
+    background-color: blanchedalmond;
+    /* border:solid .2px black; */
+    /* flex-wrap: wrap; */
+  }
+  .flex-item
+  {
+    margin: 4px;
+   
+  }
+
+
+  img{
+    width: 75%;
+  }
+
+
+  h1
+  {
+    margin-top: 5rem;
+    margin-left: 15%;
+   
+  }
+  h3 b
+  {
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+  .container
+  {
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .barbell-bench
+  {
+    width: 50%;
+    align-items: center;
+    padding-top: 20px;
+  }
+  p
+  {
+    font-size: 1 rem;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 10px;
+  }
+
+  .flex-item a
+  {
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: black;
+  }
+  

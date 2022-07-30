@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+body
+{
+    background-image: linear-gradient(to right,rgba(48, 48, 48, 0.6),rgba(41, 41, 41, 0.6)),url('../images/angry-athlete-trains-gym-big-76487710.jpg');
+    background-size: cover;
+}
+.Header {
+    /* position: fixed; */
+    top: 0; left: 0; right: 0;
+    background:black;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top:0 9%;
+
+}
+
+.Header .logo {
+        font-weight: bolder;
+        font-size: 3rem;
+        color:white;
+}
+
+.Header .logo span {
+
+    color:red
+}
+
+.Header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.header-text
+{
+    font-size: 50px;
+    margin-left: 0px;
+    animation: rotates 3s linear infinite alternate;
+    color: aliceblue;
+}
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 25px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: linear-gradient(to right,rgba(48, 48, 48, 0.6),rgba(41, 41, 41, 0.6)),url('/gettyimages-1162162438-170667a.jpg'); */
+    /* background-size: cover; */
+    /* opacity: 0.89; */
+}
+
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+}
+
+.contact .content p
+{
+    font-weight: 300;
+    color: white;
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+
+}
+
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: rgb(224, 224, 224);
+}
+
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 254, 254, 0.212);
+}
+
+.contactForm h2
+{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(51, 51, 51);
+    outline: none;
+    resize: none;
+    
+}
+
+/* .contactForm .inputBox ::placeholder
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: rgb(85, 85, 85);
+} */
+
+/* .contactForm .inputBox input:focus::placeholder,
+.contactForm .inputBox input:valid::placeholder
+{
+    color: skyblue;
+    font-size: 12px;
+    transform: translateY(-20px);
+} */
+
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: rgb(0, 184, 197);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+}
+
+@media (max-width:800px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo
+    {
+        width: 100%;
+    }
+}
